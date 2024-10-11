@@ -44,7 +44,6 @@ cap = cv2.VideoCapture('rtsp://192.168.0.102:8080/h264_aac.sdp')
 spoken_ids = set()
 count=0
 while True:
-#    ret, frame = cap.read()
     frame=cam()
     count += 1
     if count % 3 != 0:
